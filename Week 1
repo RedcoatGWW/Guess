@@ -1,0 +1,40 @@
+import random #Here i have imported the random library in order to create the random number
+class Game():
+     def __init__(self,randnum):
+
+        self.randnum = target
+
+target = random.randint(1, 100)
+attemptsMax = 10
+
+for attempt in range(1, attemptsMax +1):
+    print(f'Attempts remaining: {attempt}/{attemptsMax}')
+    if attempt == attemptsMax :
+        print("You lose!")
+
+    answer = int(input("Enter a number between 1 and 100: "))
+
+
+    if answer == target:
+        print('Well done, you guessed correctly:')
+        print(f"The random number is: {target}")
+        exit()
+
+    elif answer > target:
+        print('You are too high, try again.')
+
+    elif answer < target:
+        print('You are too low, try again.')
+
+
+# I have included so far: 
+# control flow, 
+# loops, 
+# user input, 
+# comparison to the answer, 
+# provided user feedback, 
+# included a guess counter
+
+#I need to add:
+
+
